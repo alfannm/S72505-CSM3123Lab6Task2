@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Root layout for the shake detection screen.
+    RelativeLayout is used to position elements relative to each other
+    and to the parent container.
+-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/shakeRootLayout"
     android:layout_width="match_parent"
@@ -6,6 +12,10 @@
     android:background="#FFFFFF"
     android:padding="20dp">
 
+    <!--
+        Main TextView that displays the current shake count.
+        Positioned at the center of the screen.
+    -->
     <TextView
         android:id="@+id/shakeCounterLabel"
         android:layout_width="wrap_content"
@@ -15,6 +25,10 @@
         android:textSize="32sp"
         android:textStyle="bold" />
 
+    <!--
+        Instruction TextView displayed below the shake counter
+        to guide the user on how to interact with the app.
+    -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
